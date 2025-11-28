@@ -12,7 +12,7 @@ body {
   width: 100%;
 }
 body {
-  background-image: url(./background.jpg);
+  background-image: url(./background.avif);
   background-position: center;
   background-size: cover;
   // background-color: #001d3d;
@@ -23,6 +23,7 @@ body {
   justify-content: center;
   cursor: none;
   overflow: hidden;
+  user-select: none;
 
   #cursor {
     position: absolute;
@@ -77,12 +78,12 @@ body {
     .back {
       background: conic-gradient(
         from 90deg at 50% 50%,
-        #6a040f,
-        #9d0208,
-        #e85d04,
-        #ffb703
+        #052AE6,
+        #8170FC,
+        #F0C4ED,
+        #E4D5F0
       );
-      box-shadow: 11px 5px 20px #fafdf6;
+      box-shadow: 11px 5px 20px #eafdd1;
     }
   }
 

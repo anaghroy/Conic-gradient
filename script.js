@@ -32,7 +32,7 @@ h1.addEventListener("mouseover", () => {
 
     h1.innerText = str;
 
-    iteration += 0.1;
+    iteration += 0.2;
 
     // When full text is restored, stop animation
     if (iteration >= originalText.length) {

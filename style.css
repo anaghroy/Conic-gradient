@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  background-image: url(./background.jpg);
+  background-image: url(./background.avif);
   background-position: center;
   background-size: cover;
   color: #3e7f24;
@@ -22,6 +22,9 @@ body {
   justify-content: center;
   cursor: none;
   overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body #cursor {
   position: absolute;
@@ -75,8 +78,8 @@ body .container .main h1 {
   top: 45%;
 }
 body .container .back {
-  background: conic-gradient(from 90deg at 50% 50%, #6a040f, #9d0208, #e85d04, #ffb703);
-  box-shadow: 11px 5px 20px #fafdf6;
+  background: conic-gradient(from 90deg at 50% 50%, #052AE6, #8170FC, #F0C4ED, #E4D5F0);
+  box-shadow: 11px 5px 20px #eafdd1;
 }
 body .down {
   height: 40%;
