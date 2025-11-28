@@ -11,7 +11,6 @@ body {
   height: 100%;
   width: 100%;
 }
-
 body {
   background-image: url(./background.jpg);
   background-position: center;
@@ -22,7 +21,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: none;
+  overflow: hidden;
 
+  #cursor {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    width: 30px;
+    transform: translate(-50% -50%);
+    z-index: 1000;
+  }
   .container {
     height: 50%;
     width: 50%;
@@ -43,7 +53,7 @@ body {
       color: #3e7f24;
       align-items: center;
       display: flex;
-      justify-content: center;
+      justify-content: end;
       box-shadow: -10px 10px 20px #fafdf6;
       overflow: hidden;
       img {
@@ -53,12 +63,14 @@ body {
         position: relative;
       }
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: center;
         color: #fff;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #201e1be6;
         font-family: monospace;
         position: absolute;
-        top: 50%;
+        top: 45%;
       }
     }
 
@@ -75,15 +87,16 @@ body {
   }
 
   .down {
-    height: 30%;
-    width: 30%;
+    height: 40%;
+    width: 40%;
     border-radius: 20px;
     background: linear-gradient(45deg, #ffaa00, #ffa200, #ffd000, #ffdd00);
     display: flex;
-    margin-top: 20px;
+    margin-top: 30px;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    clip-path: xywh(0 5px 100% 85% round 15% 0);
     // animation: change 5s infinite alternate;
     img {
       width: 100%;

@@ -20,6 +20,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: none;
+  overflow: hidden;
+}
+body #cursor {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  pointer-events: none;
+  width: 30px;
+  transform: translate(-50% -50%);
+  z-index: 1000;
 }
 body .container {
   height: 50%;
@@ -40,7 +53,7 @@ body .container .main {
   color: #3e7f24;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   box-shadow: -10px 10px 20px #fafdf6;
   overflow: hidden;
 }
@@ -52,27 +65,30 @@ body .container .main img {
   position: relative;
 }
 body .container .main h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
   color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(32, 30, 27, 0.9019607843);
   font-family: monospace;
   position: absolute;
-  top: 50%;
+  top: 45%;
 }
 body .container .back {
   background: conic-gradient(from 90deg at 50% 50%, #6a040f, #9d0208, #e85d04, #ffb703);
   box-shadow: 11px 5px 20px #fafdf6;
 }
 body .down {
-  height: 30%;
-  width: 30%;
+  height: 40%;
+  width: 40%;
   border-radius: 20px;
   background: linear-gradient(45deg, #ffaa00, #ffa200, #ffd000, #ffdd00);
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  clip-path: xywh(0 5px 100% 85% round 15% 0);
 }
 body .down img {
   width: 100%;
