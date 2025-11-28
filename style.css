@@ -54,7 +54,7 @@ body .container .main {
   align-items: center;
   display: flex;
   justify-content: end;
-  box-shadow: -10px 10px 20px #fafdf6;
+  box-shadow: -10px 10px 20px #eafdd1;
   overflow: hidden;
 }
 body .container .main img {
@@ -69,7 +69,7 @@ body .container .main h1 {
   text-align: center;
   color: #fff;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(32, 30, 27, 0.9019607843);
+  -webkit-text-stroke-color: #001d3d;
   font-family: monospace;
   position: absolute;
   top: 45%;
@@ -88,7 +88,7 @@ body .down {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  clip-path: xywh(0 5px 100% 85% round 15% 0);
+  clip-path: xywh(0 5px 100% 95% round 15% 0);
 }
 body .down img {
   width: 100%;
